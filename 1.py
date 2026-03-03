@@ -1,15 +1,12 @@
-# @title 2. Install All Dependencies
-!pip install -q streamlit
-!pip install -q streamlit-folium
-!pip install -q streamlit-autorefresh
-!pip install -q folium
-!pip install -q plotly
-!pip install -q pandas numpy
-!pip install -q opencv-python pillow
-!pip install -q geopy
-!pip install -q pyngrok
+# Install all required packages
+pip install streamlit
+pip install streamlit-folium
+pip install streamlit-autorefresh
+pip install folium
+pip install plotly
+pip install pandas numpy
+pip install opencv-python pillow
+pip install geopy
 
 # Verify installation
-import streamlit as st
-print(f"✅ Streamlit version: {st.__version__}")
-print("✅ All packages installed successfully!")
+python -c "import streamlit as st; print(f'✅ Streamlit version: {st.__version__}'); print('✅ All packages installed successfully!')"
